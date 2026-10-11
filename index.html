@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna & Sueños - Tienda de Pijamas</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos opcionales de FontAwesome para el carrito -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="navbar">
+            <div class="logo">🌙 Luna & Sueños</div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#nosotros">Nosotros</a>
+            </nav>
+            <div class="cart-icon" id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO (INICIO) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>El confort que tus noches merecen</h1>
+            <p>Descubre nuestra colección de pijamas premium hechas para tus mejores sueños.</p>
+            <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <main id="catalogo" class="container">
+        <h2 class="section-title">Nuestra Colección</h2>
+        
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-card" data-id="1">
+                <div class="product-image gradient-silk">✨</div>
+                <div class="product-info">
+                    <h3>Pijama Seda Elegance</h3>
+                    <p class="category">Seda Premium</p>
+                    <p class="price">$45.000</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-id="2">
+                <div class="product-image gradient-cotton">☁️</div>
+                <div class="product-info">
+                    <h3>Pijama Algodón Cloud</h3>
+                    <p class="category">100% Algodón</p>
+                    <p class="price">$35.000</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-id="3">
+                <div class="product-image gradient-thermal">🔥</div>
+                <div class="product-info">
+                    <h3>Pijama Térmica Winter</h3>
+                    <p class="category">Abrigadora / Polar</p>
+                    <p class="price">$40.000</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-id="4">
+                <div class="product-image gradient-silk">🌸</div>
+                <div class="product-info">
+                    <h3>Pijama Satin Floral</h3>
+                    <p class="category">Seda / Satin</p>
+                    <p class="price">$48.000</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- BARRA LATERAL DEL CARRITO (CERRADA POR DEFECTO) -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+            <!-- Los productos agregados aparecerán aquí dinámicamente -->
+            <p class="empty-message">Tu carrito está vacío</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-container">
+                <span>Total:</span>
+                <span id="cart-total">$0</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Proceder al pago</button>
+        </div>
+    </div>
+
+    <!-- FONDO OSCURO AL ABRIR EL CARRITO -->
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <p>&copy; 2026 Luna & Sueños. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
